@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+* {
+  padding: 0;
+  margin: 0; }
+
+body {
+  font-size: 12px;
+  font-family: 'Kumbh Sans', sans-serif;
+  font-weight: 400;
+  background-image: linear-gradient(#af67e9, #6565e7); }
+
+hr {
+  margin-top: 0; }
+
+.container {
+  height: 100vh; }
+
+.bg-white {
+  border-radius: 25px;
+  overflow: hidden;
+  height: 650px;
+  display: grid;
+  align-items: center;
+  width: 100%; }
+
+.page-tittle {
+  font-weight: 600;
+  padding-bottom: 2rem; }
+
+.bg-pattern {
+  position: relative;
+  left: -100px;
+  width: 100%; }
+
+.bg-pattern2 {
+  display: none; }
+
+.bg-right {
+  margin: auto;
+  padding-right: 100px; }
+  .bg-right a {
+    text-decoration: none; }
+    .bg-right a h6 {
+      font-size: 1rem;
+      color: #1d1e35;
+      opacity: 0.6;
+      font-weight: 600; }
+      .bg-right a h6:hover {
+        color: #f47c57; }
+  .bg-right p {
+    width: 380px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #1d1e35;
+    opacity: 0.6; }
+
+.bg-right-collapse {
+  color: black !important;
+  opacity: 1 !important; }
+
+.section-box {
+  width: 100%; }
+
+.box {
+  position: absolute;
+  z-index: 99999;
+  transform: translate(-65%, 155%); }
+
+.bg-shadow-desktop {
+  position: absolute;
+  height: 90%;
+  transform: translate(-50%, -15%); }
+
+.bg-shadow-mobile {
+  display: none; }
+
+@media (max-width: 992px) {
+  hr {
+    margin-right: 15px; }
+  .bg-white {
+    border-radius: 25px;
+    overflow: visible;
+    height: 100%;
+    max-width: 510px;
+    margin: auto; }
+  .bg-pattern {
+    display: none; }
+  .bg-pattern2 {
+    display: block;
+    position: absolute;
+    width: 75%;
+    transform: translate(5%, -55%); }
+  .bg-shadow-desktop {
+    display: none; }
+  .bg-shadow-mobile {
+    display: block;
+    position: absolute;
+    height: 13.5%;
+    transform: translate(16%, 5%); }
+  .box {
+    display: none; }
+  .bg-left {
+    height: 150px; }
+  .bg-right {
+    padding-right: 0;
+    padding-bottom: 25px; }
+    .bg-right a {
+      text-decoration: none; }
+      .bg-right a h6 {
+        font-size: .8rem; }
+        .bg-right a h6:hover {
+          color: #f47c57; }
+    .bg-right p {
+      width: 95%;
+      font-size: 10px; }
+  .page-tittle {
+    text-align: center; } }
+
+@media (min-width: 575px) and (max-width: 992px) {
+  .bg-pattern2 {
+    width: 63%;
+    transform: translate(20%, -55%); }
+  .bg-shadow-mobile {
+    height: 15%;
+    transform: translate(34%, 5%); }
+  .bg-left {
+    height: 175px; } }
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .bg-shadow-mobile {
+    height: 15%;
+    transform: translate(63%, 5%); } }

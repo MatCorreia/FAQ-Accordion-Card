@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="./src/css/main.css">
+  
+  <title>FAQ Accordion Card</title>
+
+</head>
+<body>
+
+  <main>
+    <div class="container d-flex">      
+      <div class="section-box my-auto">
+        <img src="./src/img/illustration-box-desktop.svg" alt="Box" class="box">
+        <img src="./src/img/bg-pattern-desktop.svg" alt="Background Pattern" class="bg-shadow-desktop">
+        <img src="./src/img/bg-pattern-mobile.svg" alt="Background Pattern" class="bg-shadow-mobile">
+        <div class="bg-white">
+          <div class="row align-items-center">
+            <div class="col-12 col-lg-6 bg-left">
+              <img src="./src/img/illustration-woman-online-desktop.svg" alt="" class="bg-pattern">
+              <img src="./src/img/illustration-woman-online-mobile.svg" alt="" class="bg-pattern2">
+            </div>
+            <div class="col-10 col-lg-6 bg-right">
+              <div>
+                <h1 class="page-tittle">FAQ</h1>
+                <a href="#collapseExample1" data-toggle="collapse" onclick="dropdown(0)">
+                  <div class="row">
+                    <div class="col-10 col-md-11 mb-2">
+                      <h6 data-active>How many team members can I invite?</h6>
+                    </div>
+                    <div class="col-1">
+                      <img src="./src/img/icon-arrow-down.svg" alt="Down" class="arrow">
+                    </div>
+                  </div>
+                </a>
+                <div class="collapse" id="collapseExample1">
+                  <p>You can invite up to 2 additional users on the Free plan. There is no limit on 
+                    team members for the Premium plan.</p>  
+                </div>
+                <hr>
+                  <a href="#collapseExample2" data-toggle="collapse" onclick="dropdown(1)">
+                    <div class="row">
+                      <div class="col-10 col-md-11 mb-2">
+                        <h6 data-active>What is the maximum file upload size?</h6>
+                      </div>
+                      <div class="col-1">
+                        <img src="./src/img/icon-arrow-down.svg" alt="Down" class="arrow">
+                      </div>
+                    </div>
+                  </a>
+                  <div class="collapse" id="collapseExample2">
+                    <p>No more than 2GB. All files in your account must fit your allotted storage space.</p> 
+                  </div>
+                <hr>
+                  <a href="#collapseExample3" data-toggle="collapse" onclick="dropdown(2)">
+                    <div class="row">
+                      <div class="col-10 col-md-11 mb-2">
+                        <h6 data-active>How do I reset my password?</h6>
+                      </div>
+                      <div class="col-1">
+                        <img src="./src/img/icon-arrow-down.svg" alt="Down" class="arrow">
+                      </div>
+                    </div>
+                  </a>
+                  <div class="collapse" id="collapseExample3">
+                    <p>Click “Forgot password” from the login page or “Change password” from your profile page.
+                      A reset link will be emailed to you.</p> 
+                  </div>
+                  <hr>
+                  <a href="#collapseExample4" data-toggle="collapse" onclick="dropdown(3)">
+                    <div class="row">
+                      <div class="col-10 col-md-11 mb-2">
+                        <h6 data-active>Can I cancel my subscription?</h6>
+                      </div>
+                      <div class="col-1">
+                        <img src="./src/img/icon-arrow-down.svg" alt="Down" class="arrow">
+                      </div>
+                    </div>
+                  </a>
+                  <div class="collapse" id="collapseExample4">
+                    <p>Yes! Send us a message and we’ll process your request no questions asked.</p>
+                  </div>
+                  <hr>
+                  <a href="#collapseExample5" data-toggle="collapse" onclick="dropdown(4)">
+                    <div class="row">
+                      <div class="col-10 col-md-11 mb-2">
+                        <h6 data-active>Do you provide additional support?</h6>
+                      </div>
+                      <div class="col-1">
+                        <img src="./src/img/icon-arrow-down.svg" alt="Down" class="arrow">
+                      </div>
+                    </div>
+                  </a>
+                  <div class="collapse" id="collapseExample5">
+                    <p>Chat and email support is available 24/7. Phone lines are open during normal business hours.</p>
+                  </div>              
+              </div>
+              <hr>
+              
+            </div>
+          </div>       
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="./src/js/main.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+</body>
+</html>
